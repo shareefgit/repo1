@@ -3,6 +3,7 @@
     <version>40.0</version>
     <types>
         <members>Dobj3__c.Field1__c</members>
+        <members>SPAccobj2__c.SAccFieldTest1__c</members>
         <name>CustomField</name>
     </types>
 </Package>
