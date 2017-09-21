@@ -26,6 +26,19 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <outboundMessages>
+        <fullName>outboundmsg</fullName>
+        <apiVersion>40.0</apiVersion>
+        <endpointUrl>https://na15.autorabit.com/</endpointUrl>
+        <fields>CaseNumber</fields>
+        <fields>ClosedDate</fields>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>shareef.m@autorabit.com</integrationUser>
+        <name>outboundmsg</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
     <rules>
         <fullName>prioritystatus</fullName>
         <actions>
@@ -58,11 +71,10 @@
         <fullName>test1</fullName>
         <assignedTo>shareef.m@autorabit.com</assignedTo>
         <assignedToType>user</assignedToType>
-        <description>testingtaskaction</description>
-        <dueDateOffset>2</dueDateOffset>
+        <dueDateOffset>5</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
         <offsetFromField>Case.CreatedDate</offsetFromField>
-        <priority>Low</priority>
+        <priority>Normal</priority>
         <protected>false</protected>
         <status>In Progress</status>
         <subject>test1</subject>

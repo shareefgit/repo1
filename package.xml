@@ -19,6 +19,10 @@
         <name>WorkflowFieldUpdate</name>
     </types>
     <types>
+        <members>Case.outboundmsg</members>
+        <name>WorkflowOutboundMessage</name>
+    </types>
+    <types>
         <members>Case.prioritystatus</members>
         <members>Case.prioritystatus1</members>
         <name>WorkflowRule</name>
