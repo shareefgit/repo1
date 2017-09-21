@@ -29,6 +29,7 @@
     <outboundMessages>
         <fullName>outboundmsg</fullName>
         <apiVersion>40.0</apiVersion>
+        <description>hii52652652652962652952195295295.36.3.3.3.6363636363636</description>
         <endpointUrl>https://na15.autorabit.com/</endpointUrl>
         <fields>CaseNumber</fields>
         <fields>ClosedDate</fields>
@@ -71,6 +72,7 @@
         <fullName>test1</fullName>
         <assignedTo>shareef.m@autorabit.com</assignedTo>
         <assignedToType>user</assignedToType>
+        <description>s9d8745623212566585585585h3363636363</description>
         <dueDateOffset>5</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
         <offsetFromField>Case.CreatedDate</offsetFromField>
