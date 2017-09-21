@@ -19,7 +19,7 @@
     </alerts>
     <fieldUpdates>
         <fullName>fieldupdatetest</fullName>
-        <description>dh12h132i1321321321321321321321321</description>
+        <description>123456789987654321</description>
         <field>Status</field>
         <literalValue>Working</literalValue>
         <name>fieldupdatetest</name>
