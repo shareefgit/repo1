@@ -54,4 +54,17 @@
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
+    <tasks>
+        <fullName>test1</fullName>
+        <assignedTo>shareef.m@autorabit.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>testingtaskaction</description>
+        <dueDateOffset>2</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Low</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>test1</subject>
+    </tasks>
 </Workflow>

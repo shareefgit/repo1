@@ -23,4 +23,8 @@
         <members>Case.prioritystatus1</members>
         <name>WorkflowRule</name>
     </types>
+    <types>
+        <members>Case.test1</members>
+        <name>WorkflowTask</name>
+    </types>
 </Package>
