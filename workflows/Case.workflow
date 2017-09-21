@@ -3,8 +3,13 @@
     <alerts>
         <fullName>Mediumpriority</fullName>
         <ccEmails>Shiva.g@autorabit.com</ccEmails>
+        <ccEmails>Shiva.g1@autorabit.com</ccEmails>
         <description>Mediumpriority</description>
         <protected>false</protected>
+        <recipients>
+            <recipient>integration@00d7f000000p08fuaq.com</recipient>
+            <type>user</type>
+        </recipients>
         <recipients>
             <recipient>shareef.m@autorabit.com</recipient>
             <type>user</type>
@@ -12,6 +17,15 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/prioritystatus</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>fieldupdatetest</fullName>
+        <field>Status</field>
+        <literalValue>Working</literalValue>
+        <name>fieldupdatetest</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <rules>
         <fullName>prioritystatus</fullName>
         <actions>
