@@ -7,7 +7,16 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>unfiled$public/prioritystatus</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Case.Mediumpriority</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <types>
         <members>Case.prioritystatus</members>
+        <members>Case.prioritystatus1</members>
         <name>WorkflowRule</name>
     </types>
 </Package>
