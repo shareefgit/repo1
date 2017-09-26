@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AVS_PrfitCenterBoxLink</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AVS_PrfitCenterBoxLink</shortDescription>
+        <value>801
+802
+804
+806
+807
+808</value>
+    </labels>
+    <labels>
+        <fullName>FA_AUC_Sendmail_Subjct</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FA_AUC_Sendmail_Subjct</shortDescription>
+        <value>122
+344
+455
+677
+688
+988</value>
+    </labels>
+    <labels>
+        <fullName>LA_Search_NEWSUBMIT_BUTTON_TEXT</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LA_Search_NEWSUBMIT_BUTTON_TEXT</shortDescription>
+        <value>123
+987
+765
+345
+678</value>
+    </labels>
+</CustomLabels>

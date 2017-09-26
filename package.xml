@@ -12,6 +12,12 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>AVS_PrfitCenterBoxLink</members>
+        <members>FA_AUC_Sendmail_Subjct</members>
+        <members>LA_Search_NEWSUBMIT_BUTTON_TEXT</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
         <members>unfiled$public/prioritystatus</members>
         <name>EmailTemplate</name>
     </types>
