@@ -47,6 +47,13 @@
 903</value>
     </labels>
     <labels>
+        <fullName>Test_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Test Label</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
         <fullName>cls1</fullName>
         <language>en_US</language>
         <protected>true</protected>

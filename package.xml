@@ -16,12 +16,17 @@
         <members>FA_AUC_Sendmail_Subjct</members>
         <members>LA_Search_NEWSUBMIT_BUTTON_TEXT</members>
         <members>LCA_Seh_Page_Title</members>
+        <members>Test_Label</members>
         <members>cls1</members>
         <name>CustomLabel</name>
     </types>
     <types>
         <members>unfiled$public/prioritystatus</members>
         <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>sv</members>
+        <name>Translations</name>
     </types>
     <types>
         <members>Case.Mediumpriority</members>
