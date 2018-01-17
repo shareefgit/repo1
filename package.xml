@@ -40,6 +40,11 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>run1/AR_test1</members>
+        <members>run1/AR_test2</members>
+        <name>Report</name>
+    </types>
+    <types>
         <members>yousuf</members>
         <name>Role</name>
     </types>
