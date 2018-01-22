@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Highpriority_case_created</fullName>
+        <ccEmails>shiva.g@autorabit.com</ccEmails>
+        <description>Highpriority case created</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>shareef.m@autorabit.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/prioritystatus</template>
+    </alerts>
+    <alerts>
         <fullName>Mediumpriority</fullName>
         <ccEmails>Shiva.g@autorabit.com</ccEmails>
         <ccEmails>Shiva.g1@autorabit.com</ccEmails>
@@ -41,6 +53,21 @@
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
     <rules>
+        <fullName>case created 1</fullName>
+        <actions>
+            <name>case1</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.CaseNumber</field>
+            <operation>equals</operation>
+            <value>2</value>
+        </criteriaItems>
+        <description>hiiiiiiii</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>prioritystatus</fullName>
         <actions>
             <name>Highpriority_case_created</name>
@@ -60,6 +87,18 @@
             <name>Mediumpriority</name>
             <type>Alert</type>
         </actions>
+        <actions>
+            <name>fieldupdatetest</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>outboundmsg</name>
+            <type>OutboundMessage</type>
+        </actions>
+        <actions>
+            <name>test1</name>
+            <type>Task</type>
+        </actions>
         <active>true</active>
         <criteriaItems>
             <field>Case.Priority</field>
@@ -68,6 +107,19 @@
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
+    <tasks>
+        <fullName>case1</fullName>
+        <assignedTo>shareef.m@autorabit.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>dddddd</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>case</subject>
+    </tasks>
     <tasks>
         <fullName>test1</fullName>
         <assignedTo>shareef.m@autorabit.com</assignedTo>

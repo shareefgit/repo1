@@ -6,4 +6,5 @@
     <style>none</style>
     <subject>Highpriority case created# {!Case.CaseNumber}</subject>
     <type>text</type>
+    <uiType>Aloha</uiType>
 </EmailTemplate>

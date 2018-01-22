@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>yousufemail</fullName>
+        <description>yousufemail</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>shareef.m@autorabit.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SupportCaseResponse</template>
+    </alerts>
+    <rules>
+        <fullName>complier</fullName>
+        <actions>
+            <name>yousufemail</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Amount</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>hiiii</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>
