@@ -71,6 +71,7 @@
     <types>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
+        <members>Account.Activate__c</members>
         <members>Account.Active__c</members>
         <members>Account.AnnualRevenue</members>
         <members>Account.BillingAddress</members>
