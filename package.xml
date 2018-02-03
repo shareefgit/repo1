@@ -9,6 +9,11 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>SE17422</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>SE7488</members>
         <members>testshiva</members>
         <members>yousuftest</members>
         <name>ApexPage</name>
@@ -71,6 +76,7 @@
     <types>
         <members>Account.AccountNumber</members>
         <members>Account.AccountSource</members>
+        <members>Account.Activate1__c</members>
         <members>Account.Activate__c</members>
         <members>Account.Active__c</members>
         <members>Account.AnnualRevenue</members>
@@ -698,6 +704,7 @@
     </types>
     <types>
         <members>Kumar__c</members>
+        <members>SE74881</members>
         <members>Student__c</members>
         <members>Support__c</members>
         <members>Vehicle__c</members>
@@ -733,6 +740,7 @@
     <types>
         <members>LightningSalesConsole_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
+        <members>SE74881</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -798,6 +806,7 @@
         <members>Training1__c-Training1 Layout</members>
         <members>Training2__c-Training2 Layout</members>
         <members>User-User Layout</members>
+        <members>UserAlt-User Profile Layout</members>
         <members>UserProvAccount-User Provisioning Account Layout</members>
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
