@@ -705,6 +705,7 @@
     <types>
         <members>Kumar__c</members>
         <members>SE74881</members>
+        <members>SETest1</members>
         <members>Student__c</members>
         <members>Support__c</members>
         <members>Vehicle__c</members>
@@ -738,9 +739,13 @@
         <name>EscalationRule</name>
     </types>
     <types>
+        <members>FPSE_call</members>
+        <members>Flexipage</members>
         <members>LightningSalesConsole_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
         <members>SE74881</members>
+        <members>SETest1</members>
+        <members>SEtest2</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -961,6 +966,7 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>Account.Testrecord</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
         <name>RecordType</name>
     </types>
