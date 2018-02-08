@@ -2,6 +2,8 @@
     <types>
         <members>Accountclass</members>
         <members>Computer</members>
+        <members>HelloSalesforce</members>
+        <members>HelloSalesforceTest</members>
         <members>InitiateAccount</members>
         <members>TestBankAccount</members>
         <members>TestOrg</members>

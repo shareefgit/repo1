@@ -89,6 +89,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>HelloSalesforce</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HelloSalesforceTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>InitiateAccount</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -1670,6 +1678,13 @@
         <apexPage>yousuftest</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>Flexipage</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+    </profileActionOverrides>
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Account.Testrecord</recordType>
