@@ -628,6 +628,7 @@
         <members>UserProvisioningRequest.State</members>
         <members>UserProvisioningRequest.UserProvAccountId</members>
         <members>Vehicle__c.PlateNumber__c</members>
+        <members>Yousuf_Shareef__c.Test112__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -977,6 +978,7 @@
     <types>
         <members>Account.Testrecord</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
+        <members>Yousuf_Shareef__c.Newrecordtype</members>
         <name>RecordType</name>
     </types>
     <types>
