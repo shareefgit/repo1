@@ -5,6 +5,7 @@
         <members>Accountclass</members>
         <members>Computer</members>
         <members>Computer2</members>
+        <members>Computer3</members>
         <members>HelloSalesforce</members>
         <members>HelloSalesforceTest</members>
         <members>InitiateAccount</members>
