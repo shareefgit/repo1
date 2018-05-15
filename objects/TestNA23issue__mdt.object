@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Test1__c</fullName>
+        <defaultValue>&apos;test&apos;</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Test1</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>TestNA23issue</label>
+    <pluralLabel>TestNA23issues</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

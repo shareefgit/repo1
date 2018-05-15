@@ -80,4 +80,19 @@
     <layoutItems>
         <field>ArticleTotalViewCount</field>
     </layoutItems>
+    <layoutItems>
+        <field>AssignedToId</field>
+    </layoutItems>
+    <layoutItems>
+        <field>AssignedById</field>
+    </layoutItems>
+    <layoutItems>
+        <field>AssignmentDate</field>
+    </layoutItems>
+    <layoutItems>
+        <field>AssignmentDueDate</field>
+    </layoutItems>
+    <layoutItems>
+        <field>AssignmentNote</field>
+    </layoutItems>
 </ChannelLayout>

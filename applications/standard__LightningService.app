@@ -3,8 +3,26 @@
     <formFactors>Large</formFactors>
     <label>Service Console</label>
     <navType>Console</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SEtest2</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Shivaprofile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SEtest2</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Testrecord</recordType>
+        <type>Flexipage</type>
+        <profile>Shivaprofile</profile>
+    </profileActionOverrides>
     <setupExperience>ServiceSetup</setupExperience>
     <tab>standard-Case</tab>
+    <tab>SETest1</tab>
     <tab>standard-Contact</tab>
     <tab>standard-Account</tab>
     <tab>standard-report</tab>
@@ -12,4 +30,27 @@
     <tab>standard-home</tab>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
+    <workspaceMappings>
+        <mapping>
+            <tab>SETest1</tab>
+        </mapping>
+        <mapping>
+            <tab>standard-Account</tab>
+        </mapping>
+        <mapping>
+            <tab>standard-Case</tab>
+        </mapping>
+        <mapping>
+            <tab>standard-Contact</tab>
+        </mapping>
+        <mapping>
+            <tab>standard-Dashboard</tab>
+        </mapping>
+        <mapping>
+            <tab>standard-home</tab>
+        </mapping>
+        <mapping>
+            <tab>standard-report</tab>
+        </mapping>
+    </workspaceMappings>
 </CustomApplication>

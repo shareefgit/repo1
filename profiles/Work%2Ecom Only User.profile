@@ -81,11 +81,35 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ARifApexClassTest8</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ARmetacheck</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>Accountclass</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>Computer</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Computer2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Computer3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Computer4</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>Computer5</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -110,6 +134,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>cases</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ns21test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
@@ -905,6 +933,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Goal.OrigGoalId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Idea.Attachment</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1042,6 +1075,16 @@
         <editable>true</editable>
         <field>Lead.Website</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Metric.OrigMetricId__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NA23issue_setting__mdt.NA23issue_cb__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1375,11 +1418,45 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Test11221f__c.Testdd__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>TestNA23issue__mdt.Test1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>TestNS21__c.TestNS22__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Vehicle__c.PlateNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Yousuf_Shareef__c.PROFIT_CENTER_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Yousuf_Shareef__c.Test112__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Yousuf_Shareef__c.Testyousuf__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Testrecord</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -1445,6 +1522,12 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>NA23issue_setting__mdt-NA23issue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>NewNA23__c-NewNA23 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Opportunity-Opportunity Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1490,6 +1573,18 @@
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Test11221f__c-Test11221f Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TestNA23issue__mdt-TestNA23issue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TestNS21__c-TestNS21 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Testhugh__c-Testhugh Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Testingemail__c-Testingemail Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1519,6 +1614,18 @@
     <layoutAssignments>
         <layout>Yousuf_Shareef__c-Yousuf_Shareef Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yousuf_Shareef__c-Yousuf_Shareef Layout</layout>
+        <recordType>Yousuf_Shareef__c.Newrecordtype</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yousuf_Shareef__c-Yousuf_Shareef Layout</layout>
+        <recordType>Yousuf_Shareef__c.SErecordtype</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Yousuf_Shareef__c-Yousuf_Shareef Layout</layout>
+        <recordType>Yousuf_Shareef__c.TestRecordTypes</recordType>
+    </layoutAssignments>
     <pageAccesses>
         <apexPage>SE7488</apexPage>
         <enabled>false</enabled>
@@ -1540,6 +1647,31 @@
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Metric.Completion</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Metric.Progress</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Yousuf_Shareef__c.Newrecordtype</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Yousuf_Shareef__c.SErecordtype</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Yousuf_Shareef__c.TestRecordTypes</recordType>
+        <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Kumar__c</tab>
@@ -1586,6 +1718,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-CollaborationGroup</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Contact</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
@@ -1628,6 +1764,10 @@
     <tabVisibilities>
         <tab>standard-Product2</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-QuickText</tab>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Scorecard</tab>

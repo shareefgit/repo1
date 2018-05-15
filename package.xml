@@ -2,8 +2,14 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <version>41.0</version>
     <types>
+        <members>ARifApexClassTest8</members>
+        <members>ARmetacheck</members>
         <members>Accountclass</members>
         <members>Computer</members>
+        <members>Computer2</members>
+        <members>Computer3</members>
+        <members>Computer4</members>
+        <members>Computer5</members>
         <members>HelloSalesforce</members>
         <members>HelloSalesforceTest</members>
         <members>InitiateAccount</members>
@@ -45,6 +51,10 @@
         <members>Case</members>
         <members>Lead</members>
         <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>Knowledge__kav.Email</members>
+        <name>ChannelLayout</name>
     </types>
     <types>
         <members>DataCloudGeoLocation</members>
@@ -435,6 +445,7 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>Goal.OrigGoalId__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>Lead.Address</members>
@@ -478,6 +489,8 @@
         <members>Macro.Name</members>
         <members>Macro.OwnerId</members>
         <members>Macro.StartingContext</members>
+        <members>Metric.OrigMetricId__c</members>
+        <members>NA23issue_setting__mdt.NA23issue_cb__c</members>
         <members>Opportunity.AccountId</members>
         <members>Opportunity.Amount</members>
         <members>Opportunity.CampaignId</members>
@@ -614,6 +627,9 @@
         <members>Task.Type</members>
         <members>Task.WhatId</members>
         <members>Task.WhoId</members>
+        <members>Test11221f__c.Testdd__c</members>
+        <members>TestNA23issue__mdt.Test1__c</members>
+        <members>TestNS21__c.TestNS22__c</members>
         <members>User.ManagerId</members>
         <members>UserProvisioningRequest.AppName</members>
         <members>UserProvisioningRequest.ApprovalStatus</members>
@@ -627,7 +643,18 @@
         <members>UserProvisioningRequest.State</members>
         <members>UserProvisioningRequest.UserProvAccountId</members>
         <members>Vehicle__c.PlateNumber__c</members>
+        <members>Yousuf_Shareef__c.PROFIT_CENTER_ID__c</members>
+        <members>Yousuf_Shareef__c.Test112__c</members>
+        <members>Yousuf_Shareef__c.Testyousuf__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>CustomLabels</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>NA23issue_setting.Test1234</members>
+        <name>CustomMetadata</name>
     </types>
     <types>
         <members>Account</members>
@@ -642,6 +669,8 @@
         <members>CampaignMember</members>
         <members>Case</members>
         <members>CaseContactRole</members>
+        <members>CollaborationGroup</members>
+        <members>CollaborationGroupMember</members>
         <members>Commithistorytest__c</members>
         <members>Contact</members>
         <members>ContactCleanInfo</members>
@@ -665,17 +694,22 @@
         <members>Macro</members>
         <members>MacroAction</members>
         <members>MacroInstruction</members>
+        <members>NA23issue_setting__mdt</members>
+        <members>NewNA23__c</members>
         <members>Opportunity</members>
         <members>OpportunityCompetitor</members>
         <members>OpportunityContactRole</members>
         <members>OpportunityLineItem</members>
         <members>Order</members>
         <members>OrderItem</members>
+        <members>OrgDeleteRequest</members>
         <members>PartnerRole</members>
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
         <members>Product2</members>
+        <members>QuickText</members>
         <members>Scorecard</members>
+        <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
         <members>Site</members>
         <members>SocialPersona</members>
@@ -684,7 +718,13 @@
         <members>Student__c</members>
         <members>Support__c</members>
         <members>Task</members>
+        <members>Test11221f__c</members>
+        <members>TestNA23issue__mdt</members>
+        <members>TestNS21__c</members>
+        <members>Testhugh__c</members>
         <members>Testingemail__c</members>
+        <members>Topic</members>
+        <members>TopicAssignment</members>
         <members>Training1__c</members>
         <members>Training2__c</members>
         <members>User</members>
@@ -723,6 +763,7 @@
         <name>DuplicateRule</name>
     </types>
     <types>
+        <members>unfiled$public</members>
         <members>unfiled$public/MarketingProductInquiryResponse</members>
         <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
         <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
@@ -742,6 +783,14 @@
     <types>
         <members>Case.Standard</members>
         <name>EscalationRule</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>EscalationRules</name>
+    </types>
+    <types>
+        <members>Case.SupportCase10741</members>
+        <name>FieldSet</name>
     </types>
     <types>
         <members>FPSE_call</members>
@@ -796,6 +845,8 @@
         <members>Lead-Lead %28Support%29 Layout</members>
         <members>Lead-Lead Layout</members>
         <members>Macro-Macro Layout</members>
+        <members>NA23issue_setting__mdt-NA23issue Layout</members>
+        <members>NewNA23__c-NewNA23 Layout</members>
         <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
         <members>Opportunity-Opportunity %28Sales%29 Layout</members>
         <members>Opportunity-Opportunity %28Support%29 Layout</members>
@@ -814,6 +865,10 @@
         <members>Student__c-Student Layout</members>
         <members>Support__c-Support Layout</members>
         <members>Task-Task Layout</members>
+        <members>Test11221f__c-Test11221f Layout</members>
+        <members>TestNA23issue__mdt-TestNA23issue Layout</members>
+        <members>TestNS21__c-TestNS21 Layout</members>
+        <members>Testhugh__c-Testhugh Layout</members>
         <members>Testingemail__c-Testingemail Layout</members>
         <members>Training1__c-Training1 Layout</members>
         <members>Training2__c-Training2 Layout</members>
@@ -887,6 +942,18 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Account.Standard_Account_Match_Rule_v1_0</members>
+        <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
+        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
+        <name>MatchingRule</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Contact</members>
+        <members>Lead</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
         <members>Garage_Developer</members>
         <members>Shiva_Developer</members>
         <members>Yousuf_Developer</members>
@@ -920,6 +987,7 @@
         <members>HighVolumePortal</members>
         <members>Identity User</members>
         <members>MarketingProfile</members>
+        <members>NA23 profile</members>
         <members>Partner App Subscription User</members>
         <members>Partner Community Login User</members>
         <members>Partner Community User</members>
@@ -930,6 +998,7 @@
         <members>SolutionManager</members>
         <members>Standard</members>
         <members>StandardAul</members>
+        <members>TestProfile</members>
         <members>Work%2Ecom Only User</members>
         <name>Profile</name>
     </types>
@@ -975,6 +1044,11 @@
     <types>
         <members>Account.Testrecord</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
+        <members>Metric.Completion</members>
+        <members>Metric.Progress</members>
+        <members>Yousuf_Shareef__c.Newrecordtype</members>
+        <members>Yousuf_Shareef__c.SErecordtype</members>
+        <members>Yousuf_Shareef__c.TestRecordTypes</members>
         <name>RecordType</name>
     </types>
     <types>
@@ -990,6 +1064,9 @@
         <members>test</members>
         <members>test/contacts</members>
         <members>test/testreport</members>
+        <members>unfiled$public</members>
+        <members>unfiled$public/Yousuftest</members>
+        <members>unfiled$public/report</members>
         <name>Report</name>
     </types>
     <types>
@@ -1041,6 +1118,7 @@
         <members>Quote</members>
         <members>Search</members>
         <members>Security</members>
+        <members>SocialCustomerService</members>
         <name>Settings</name>
     </types>
     <types>
@@ -1123,6 +1201,38 @@
         <name>StaticResource</name>
     </types>
     <types>
+        <members>Account</members>
+        <members>Asset</members>
+        <members>CSYS__c</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Commithistorytest__c</members>
+        <members>Contact</members>
+        <members>ContentDocument</members>
+        <members>Contract</members>
+        <members>Event</members>
+        <members>Knowledge__kav</members>
+        <members>Kumar__c</members>
+        <members>Lead</members>
+        <members>LinkedArticle</members>
+        <members>NewNA23__c</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>Solution</members>
+        <members>Student__c</members>
+        <members>Support__c</members>
+        <members>Task</members>
+        <members>Test11221f__c</members>
+        <members>TestNS21__c</members>
+        <members>Testhugh__c</members>
+        <members>Testingemail__c</members>
+        <members>Training1__c</members>
+        <members>Training2__c</members>
+        <members>Vehicle__c</members>
+        <members>Yousuf_Shareef__c</members>
+        <name>TopicsForObjects</name>
+    </types>
+    <types>
         <members>Account.Billing</members>
         <members>Campaign.ViewCampaignInfluenceReport</members>
         <members>Case.UpsellCrosssellOpportunity</members>
@@ -1152,6 +1262,7 @@
         <name>WorkflowOutboundMessage</name>
     </types>
     <types>
+        <members>Account.testttt</members>
         <members>Case.case created 1</members>
         <members>Case.prioritystatus</members>
         <members>Case.prioritystatus1</members>
