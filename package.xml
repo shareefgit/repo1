@@ -9,7 +9,6 @@
         <members>Computer2</members>
         <members>Computer3</members>
         <members>Computer4</members>
-        <members>Computer5</members>
         <members>HelloSalesforce</members>
         <members>HelloSalesforceTest</members>
         <members>InitiateAccount</members>
@@ -51,10 +50,6 @@
         <members>Case</members>
         <members>Lead</members>
         <name>AutoResponseRules</name>
-    </types>
-    <types>
-        <members>Knowledge__kav.Email</members>
-        <name>ChannelLayout</name>
     </types>
     <types>
         <members>DataCloudGeoLocation</members>
@@ -405,6 +400,7 @@
         <members>DandBCompany.UsTaxId</members>
         <members>DandBCompany.WomenOwned</members>
         <members>DandBCompany.YearStarted</members>
+        <members>Dobj3__c.Field1__c</members>
         <members>DuplicateRecordItem.DuplicateRecordSetId</members>
         <members>DuplicateRecordItem.RecordId</members>
         <members>DuplicateRecordSet.DuplicateRuleId</members>
@@ -436,6 +432,7 @@
         <members>Event.EventSubtype</members>
         <members>Event.IsAllDayEvent</members>
         <members>Event.IsPrivate</members>
+        <members>Event.IsReminderSet</members>
         <members>Event.Location</members>
         <members>Event.OwnerId</members>
         <members>Event.Phone</members>
@@ -500,6 +497,7 @@
         <members>Opportunity.DeliveryInstallationStatus__c</members>
         <members>Opportunity.Description</members>
         <members>Opportunity.ExpectedRevenue</members>
+        <members>Opportunity.IqScore</members>
         <members>Opportunity.IsPrivate</members>
         <members>Opportunity.LeadSource</members>
         <members>Opportunity.MainCompetitors__c</members>
@@ -588,8 +586,17 @@
         <members>Product2.ProductCode</members>
         <members>Product2.QuantityUnitOfMeasure</members>
         <members>Product2.StockKeepingUnit</members>
+        <members>QuickText.Category</members>
+        <members>QuickText.Channel</members>
+        <members>QuickText.Message</members>
+        <members>QuickText.Name</members>
+        <members>QuickText.OwnerId</members>
+        <members>SPAccobj2__c.SAccFieldTest1__c</members>
         <members>Scorecard.Description</members>
         <members>Scorecard.Name</members>
+        <members>Scorecard.OwnerId</members>
+        <members>ScorecardAssociation.ScorecardId</members>
+        <members>ScorecardAssociation.TargetEntityId</members>
         <members>ScorecardMetric.Category</members>
         <members>ScorecardMetric.Description</members>
         <members>ScorecardMetric.Name</members>
@@ -647,10 +654,6 @@
         <members>Yousuf_Shareef__c.Test112__c</members>
         <members>Yousuf_Shareef__c.Testyousuf__c</members>
         <name>CustomField</name>
-    </types>
-    <types>
-        <members>CustomLabels</members>
-        <name>CustomLabels</name>
     </types>
     <types>
         <members>NA23issue_setting.Test1234</members>
@@ -763,7 +766,6 @@
         <name>DuplicateRule</name>
     </types>
     <types>
-        <members>unfiled$public</members>
         <members>unfiled$public/MarketingProductInquiryResponse</members>
         <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
         <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
@@ -783,10 +785,6 @@
     <types>
         <members>Case.Standard</members>
         <name>EscalationRule</name>
-    </types>
-    <types>
-        <members>Case</members>
-        <name>EscalationRules</name>
     </types>
     <types>
         <members>Case.SupportCase10741</members>
@@ -898,6 +896,7 @@
         <members>Case.AllOpenCases</members>
         <members>Case.MyCases</members>
         <members>Case.MyOpenCases</members>
+        <members>CollaborationGroup.All_ChatterGroups</members>
         <members>Contact.AllContacts</members>
         <members>Contact.BirthdaysThisMonth</members>
         <members>Contact.MyContacts</members>
@@ -930,6 +929,8 @@
         <members>Order.AllDraftOrders</members>
         <members>Order.AllOrders</members>
         <members>Product2.AllProducts</members>
+        <members>Scorecard.AllScorecards</members>
+        <members>Scorecard.MyScorecards</members>
         <members>Solution.AllReviewedSolutions</members>
         <members>Solution.AllUnreviewedSolutions</members>
         <members>Student__c.All</members>
@@ -940,18 +941,6 @@
         <members>Vehicle__c.All</members>
         <members>Yousuf_Shareef__c.All</members>
         <name>ListView</name>
-    </types>
-    <types>
-        <members>Account.Standard_Account_Match_Rule_v1_0</members>
-        <members>Contact.Standard_Contact_Match_Rule_v1_1</members>
-        <members>Lead.Standard_Lead_Match_Rule_v1_0</members>
-        <name>MatchingRule</name>
-    </types>
-    <types>
-        <members>Account</members>
-        <members>Contact</members>
-        <members>Lead</members>
-        <name>MatchingRules</name>
     </types>
     <types>
         <members>Garage_Developer</members>
@@ -1064,7 +1053,6 @@
         <members>test</members>
         <members>test/contacts</members>
         <members>test/testreport</members>
-        <members>unfiled$public</members>
         <members>unfiled$public/Yousuftest</members>
         <members>unfiled$public/report</members>
         <name>Report</name>
@@ -1118,7 +1106,6 @@
         <members>Quote</members>
         <members>Search</members>
         <members>Security</members>
-        <members>SocialCustomerService</members>
         <name>Settings</name>
     </types>
     <types>
@@ -1231,6 +1218,10 @@
         <members>Vehicle__c</members>
         <members>Yousuf_Shareef__c</members>
         <name>TopicsForObjects</name>
+    </types>
+    <types>
+        <members>sv</members>
+        <name>Translations</name>
     </types>
     <types>
         <members>Account.Billing</members>
