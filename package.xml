@@ -761,6 +761,10 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Dashboard1805</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
         <members>Contact.Standard_Rule_for_Contacts_with_Duplicate_Leads</members>
         <members>Lead.Standard_Rule_for_Leads_with_Duplicate_Contacts</members>
         <name>DuplicateRule</name>
@@ -1045,6 +1049,7 @@
         <name>RemoteSiteSetting</name>
     </types>
     <types>
+        <members>Report1805</members>
         <members>run1</members>
         <members>run1/AR_test1</members>
         <members>run1/AR_test2</members>
