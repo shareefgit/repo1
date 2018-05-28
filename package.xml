@@ -764,6 +764,8 @@
         <members>Dashboard1805</members>
         <members>May18DashboardFolder</members>
         <members>May18DashboardFolder02</members>
+        <members>testdashboard1</members>
+        <members>testdashboard1/testdash1</members>
         <name>Dashboard</name>
     </types>
     <types>
