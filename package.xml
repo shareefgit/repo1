@@ -728,6 +728,7 @@
         <members>Support__c</members>
         <members>Task</members>
         <members>Test11221f__c</members>
+        <members>Test2106__mdt</members>
         <members>TestNA23issue__mdt</members>
         <members>TestNS21__c</members>
         <members>Testhugh__c</members>
@@ -879,6 +880,7 @@
         <members>Support__c-Support Layout</members>
         <members>Task-Task Layout</members>
         <members>Test11221f__c-Test11221f Layout</members>
+        <members>Test2106__mdt-Test2106 Layout</members>
         <members>TestNA23issue__mdt-TestNA23issue Layout</members>
         <members>TestNS21__c-TestNS21 Layout</members>
         <members>Testhugh__c-Testhugh Layout</members>
