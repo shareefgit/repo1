@@ -45,6 +45,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
@@ -52,21 +53,22 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
-        <fullName>TestNS22__c</fullName>
+        <fullName>XOGrp_Field__c</fullName>
         <externalId>false</externalId>
-        <label>TestNS22</label>
-        <length>20</length>
+        <label>XOGrp Field</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>0</scale>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>TestNS21</label>
+    <label>XOGrp Account</label>
     <nameField>
-        <label>TestNS21 Name</label>
+        <label>XOGrp Account Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>TestNS21s</pluralLabel>
+    <pluralLabel>XOGrp</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

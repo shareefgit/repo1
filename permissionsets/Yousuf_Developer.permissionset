@@ -1288,6 +1288,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>XOGrp_Account__c.XOGrp_Field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Yousuf_Shareef__c.PROFIT_CENTER_ID__c</field>
         <readable>false</readable>
     </fieldPermissions>

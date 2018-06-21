@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>41.0</version>
+    <version>40.0</version>
     <types>
         <members>ARifApexClassTest8</members>
         <members>ARmetacheck</members>
@@ -52,6 +52,10 @@
         <name>AutoResponseRules</name>
     </types>
     <types>
+        <members>Knowledge__kav.Email</members>
+        <name>ChannelLayout</name>
+    </types>
+    <types>
         <members>DataCloudGeoLocation</members>
         <name>CleanDataService</name>
     </types>
@@ -72,6 +76,7 @@
         <members>standard__Chatter</members>
         <members>standard__Community</members>
         <members>standard__Content</members>
+        <members>standard__LightningInstrumentation</members>
         <members>standard__LightningSales</members>
         <members>standard__LightningSalesConsole</members>
         <members>standard__LightningService</members>
@@ -650,6 +655,7 @@
         <members>UserProvisioningRequest.State</members>
         <members>UserProvisioningRequest.UserProvAccountId</members>
         <members>Vehicle__c.PlateNumber__c</members>
+        <members>XOGrp_Account__c.XOGrp_Field__c</members>
         <members>Yousuf_Shareef__c.PROFIT_CENTER_ID__c</members>
         <members>Yousuf_Shareef__c.Test112__c</members>
         <members>Yousuf_Shareef__c.Testyousuf__c</members>
@@ -733,6 +739,7 @@
         <members>User</members>
         <members>UserProvisioningRequest</members>
         <members>Vehicle__c</members>
+        <members>XOGrp_Account__c</members>
         <members>Yousuf_Shareef__c</members>
         <name>CustomObject</name>
     </types>
@@ -884,6 +891,7 @@
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
         <members>Vehicle__c-Vehicle Layout</members>
+        <members>XOGrp_Account__c-XOGrp Account Layout</members>
         <members>Yousuf_Shareef__c-Yousuf_Shareef Layout</members>
         <name>Layout</name>
     </types>
@@ -958,6 +966,7 @@
     </types>
     <types>
         <members>Admin</members>
+        <members>Admin2</members>
         <members>Adminprofilefortesting</members>
         <members>Analytics Cloud Integration User</members>
         <members>Analytics Cloud Security User</members>
@@ -1000,11 +1009,13 @@
         <name>Profile</name>
     </types>
     <types>
+        <members>Admin2_profilePasswordPolicy1528792827457</members>
         <members>Adminprofilefortesting_profilePasswordPolicy1507802561965</members>
         <members>Analytics_Cloud_Integration_User_profilePasswordPolicy1507641326284</members>
         <name>ProfilePasswordPolicy</name>
     </types>
     <types>
+        <members>Admin2_profileSessionSetting1528792827599</members>
         <members>Adminprofilefortesting_profileSessionSetting1507802562002</members>
         <members>Analytics_Cloud_Integration_User_profileSessionSetting1507641326329</members>
         <name>ProfileSessionSetting</name>
