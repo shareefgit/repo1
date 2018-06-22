@@ -662,6 +662,10 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Test22062018</members>
+        <name>CustomLabel</name>
+    </types>
+    <types>
         <members>NA23issue_setting.Test1234</members>
         <name>CustomMetadata</name>
     </types>
@@ -1244,6 +1248,7 @@
         <name>TopicsForObjects</name>
     </types>
     <types>
+        <members>de</members>
         <members>sv</members>
         <name>Translations</name>
     </types>
