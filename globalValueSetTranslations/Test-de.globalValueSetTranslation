@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>A</masterLabel>
+        <translation>texas</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>B</masterLabel>
+        <translation>landolakes</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>C</masterLabel>
+        <translation>chicago</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

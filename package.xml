@@ -663,6 +663,7 @@
     </types>
     <types>
         <members>Test22062018</members>
+        <members>test2206</members>
         <name>CustomLabel</name>
     </types>
     <types>
@@ -820,6 +821,10 @@
         <members>SETest1</members>
         <members>SEtest2</members>
         <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Test-de</members>
+        <name>GlobalValueSetTranslation</name>
     </types>
     <types>
         <members>DE Default</members>
