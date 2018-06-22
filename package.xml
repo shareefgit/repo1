@@ -824,6 +824,7 @@
     </types>
     <types>
         <members>Test-de</members>
+        <members>Test-es</members>
         <name>GlobalValueSetTranslation</name>
     </types>
     <types>
@@ -1254,6 +1255,7 @@
     </types>
     <types>
         <members>de</members>
+        <members>es</members>
         <members>sv</members>
         <name>Translations</name>
     </types>
