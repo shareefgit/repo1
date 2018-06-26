@@ -99,6 +99,7 @@
         <members>Account.CF1__c</members>
         <members>Account.CF2__c</members>
         <members>Account.CF3__c</members>
+        <members>Account.CF4__c</members>
         <members>Account.CleanStatus</members>
         <members>Account.CustomerPriority__c</members>
         <members>Account.DandbCompanyId</members>
