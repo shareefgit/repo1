@@ -58,5 +58,14 @@
         <filterScope>Mine</filterScope>
         <label>My Scorecards</label>
     </listViews>
+    <listViews>
+        <fullName>Regional_Dispatch_Scorecard</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Regional Dispatch</label>
+        <queue>Regional_Dispatch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <sharingModel>Private</sharingModel>
 </CustomObject>

@@ -50,6 +50,21 @@
         <fullName>Title</fullName>
         <trackHistory>false</trackHistory>
     </fields>
+    <recordTypes>
+        <fullName>Test_Layout_Rec1</fullName>
+        <active>true</active>
+        <label>Test Layout Rec1</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Test_Layout_Rec2</fullName>
+        <active>true</active>
+        <label>Test Layout Rec2</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Test_Layout_Rec3</fullName>
+        <active>true</active>
+        <label>Test Layout Rec3</label>
+    </recordTypes>
     <searchLayouts>
         <searchResultsAdditionalFields>VERSION.TITLE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>VERSION.CONTENT_SIZE</searchResultsAdditionalFields>

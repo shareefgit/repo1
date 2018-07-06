@@ -63,4 +63,5 @@
     <pluralLabel>11783s</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
 </CustomObject>

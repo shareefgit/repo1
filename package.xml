@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>37.0</version>
+    <version>40.0</version>
     <types>
         <members>ARifApexClassTest8</members>
         <members>ARmetacheck</members>
@@ -678,18 +678,35 @@
         <name>CustomMetadata</name>
     </types>
     <types>
+        <members>ACI_Object__c</members>
+        <members>APR01__c</members>
+        <members>APR_20__c</members>
+        <members>APXT_CongaSign__CongaSign_Settings__c</members>
+        <members>APXT_CongaSign__Recipient__c</members>
+        <members>APXT_CongaSign__Transaction__c</members>
         <members>Account</members>
+        <members>AccountBrand</members>
         <members>AccountCleanInfo</members>
+        <members>AccountContactRelation</members>
         <members>AccountContactRole</members>
+        <members>Account_Profile_Setting__c</members>
+        <members>Account_Profile__c</members>
         <members>Activity</members>
         <members>Asset</members>
         <members>AssetRelationship</members>
         <members>AssistantProgress</members>
+        <members>AutoRABIT__kav</members>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
         <members>CSYS__c</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
         <members>Case</members>
         <members>CaseContactRole</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
+        <members>Cloud_News__e</members>
         <members>CollaborationGroup</members>
         <members>CollaborationGroupMember</members>
         <members>Commithistorytest__c</members>
@@ -699,36 +716,67 @@
         <members>Contract</members>
         <members>ContractContactRole</members>
         <members>DandBCompany</members>
+        <members>Dreamhouse_Settings__c</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
         <members>EmailMessage</members>
+        <members>Energy_Audit__c</members>
         <members>Event</members>
         <members>ExchangeUserMapping</members>
+        <members>Favorite__c</members>
         <members>FeedItem</members>
         <members>ForecastingCategoryMapping</members>
         <members>Idea</members>
+        <members>IdeaTheme</members>
+        <members>Junction_Object__c</members>
+        <members>Knowledge2__kav</members>
         <members>Knowledge__kav</members>
         <members>Kumar__c</members>
         <members>Lead</members>
         <members>LeadCleanInfo</members>
+        <members>Lead_Transition__c</members>
         <members>LinkedArticle</members>
+        <members>LiveAgentSession</members>
+        <members>LiveChatTranscript</members>
+        <members>LiveChatTranscriptEvent</members>
+        <members>LiveChatTranscriptSkill</members>
+        <members>LiveChatVisitor</members>
         <members>Macro</members>
         <members>MacroAction</members>
         <members>MacroInstruction</members>
         <members>NA23issue_setting__mdt</members>
+        <members>NetworkMember</members>
         <members>NewNA23__c</members>
+        <members>Offer__c</members>
         <members>Opportunity</members>
         <members>OpportunityCompetitor</members>
         <members>OpportunityContactRole</members>
         <members>OpportunityLineItem</members>
+        <members>OpportunityTeamMember</members>
         <members>Order</members>
         <members>OrderItem</members>
+        <members>Order_Event__e</members>
         <members>OrgDeleteRequest</members>
+        <members>PKB_Article_Feedback_Deflection__c</members>
+        <members>PKB_Featured__c</members>
+        <members>PKB__c</members>
+        <members>PartnerFundAllocation</members>
+        <members>PartnerFundClaim</members>
+        <members>PartnerFundRequest</members>
+        <members>PartnerMarketingBudget</members>
         <members>PartnerRole</members>
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
         <members>Product2</members>
+        <members>ProfileSkill</members>
+        <members>ProfileSkillEndorsement</members>
+        <members>ProfileSkillUser</members>
+        <members>Propert__c</members>
+        <members>Property__c</members>
         <members>QuickText</members>
+        <members>Quote</members>
+        <members>QuoteLineItem</members>
+        <members>RecordAction</members>
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
@@ -740,10 +788,25 @@
         <members>Support__c</members>
         <members>Suryatest__mdt</members>
         <members>Task</members>
+        <members>Territory2</members>
+        <members>Territory2Model</members>
         <members>Test11221f__c</members>
+        <members>Test1Obj__c</members>
         <members>Test2106__mdt</members>
+        <members>TestCustomMetadata__mdt</members>
+        <members>TestEEL1__c</members>
+        <members>TestEEL2__c</members>
+        <members>TestEEL3__c</members>
+        <members>TestEEL4__c</members>
+        <members>TestEEL5__c</members>
+        <members>TestEELObj__c</members>
         <members>TestNA23issue__mdt</members>
         <members>TestNS21__c</members>
+        <members>TestSub__c</members>
+        <members>Test_Ext__x</members>
+        <members>Test_Object__c</members>
+        <members>Test_Objectone__c</members>
+        <members>Test_Setting__c</members>
         <members>Testhugh__c</members>
         <members>Testingemail__c</members>
         <members>Topic</members>
@@ -752,10 +815,21 @@
         <members>Training2__c</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
+        <members>UserTerritory2Association</members>
         <members>Vehicle__c</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkThanks</members>
         <members>X11783__c</members>
         <members>XOGrp_Account__c</members>
         <members>Yousuf_Shareef__c</members>
+        <members>new_test_objects__c</members>
+        <members>picklist_object__c</members>
+        <members>pkb_ka__c</members>
+        <members>trailheadapp__Badge__c</members>
+        <members>trailheadapp__Debug_Log__c</members>
+        <members>trailheadapp__Trail__c</members>
+        <members>trailheadapp__User_Badge__c</members>
         <name>CustomObject</name>
     </types>
     <types>

@@ -17,11 +17,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Edit</actionName>
+        <actionName>EditAllProduct</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>EditAllProduct</actionName>
+        <actionName>Edit</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>

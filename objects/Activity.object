@@ -33,6 +33,135 @@
         <type>Default</type>
     </actionOverrides>
     <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CallType__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( CONTAINS( Subject,&apos;Call&apos;),1,0 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CallType</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Duration_In_seconds__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Duration In seconds</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested Callback later</fullName>
+                    <default>false</default>
+                    <label>Requested Callback later</label>
+                </value>
+                <value>
+                    <fullName>Left VM</fullName>
+                    <default>false</default>
+                    <label>Left VM</label>
+                </value>
+                <value>
+                    <fullName>Wrong Number</fullName>
+                    <default>false</default>
+                    <label>Wrong Number</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Answered</fullName>
+                    <default>false</default>
+                    <label>Answered</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100, &quot;Key Event/Task Details Captured&quot;,&quot;Missing: &quot;&amp;IF( LEN( Subject ) &lt; 3,&quot;Quality Subject Description, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN(WhoId)=0,&quot;Contact/Lead Reference, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN(WhatId)=0,&quot;Account/Opportunity Reference&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( LEN(  Subject  ) &lt; 3, 0,30) + IF( LEN(  WhoId ) = 0, 0,40) + IF( LEN(  WhatId ) = 0, 0,30)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EmailType__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( CONTAINS( Subject , &apos;Email&apos;),1,0 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EmailType</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Feedback__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Interactions__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  ISPICKVAL( Call_Status__c , &apos;Answered&apos;), 1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Interactions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Property</label>
+        <referenceTo>Propert__c</referenceTo>
+        <relationshipLabel>Activities</relationshipLabel>
+        <relationshipName>Activities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Test_field_event__c</fullName>
+        <externalId>false</externalId>
+        <label>Test field event</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
     <listViews>
         <fullName>AllActivities</fullName>
         <filterScope>Team</filterScope>

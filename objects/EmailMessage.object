@@ -54,6 +54,9 @@
         <fullName>IsExternallyVisible</fullName>
     </fields>
     <fields>
+        <fullName>IsPrivateDraft</fullName>
+    </fields>
+    <fields>
         <fullName>MessageDate</fullName>
     </fields>
     <fields>
@@ -72,6 +75,14 @@
     </fields>
     <fields>
         <fullName>Subject</fullName>
+    </fields>
+    <fields>
+        <fullName>Test_email__c</fullName>
+        <externalId>false</externalId>
+        <label>Test email</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>TextBody</fullName>

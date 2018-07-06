@@ -45,11 +45,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>List</actionName>
+        <actionName>ListClean</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>ListClean</actionName>
+        <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -77,11 +77,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>View</actionName>
+        <actionName>ViewCustomerPortal</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>ViewCustomerPortal</actionName>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -115,6 +115,26 @@
     <fields>
         <fullName>CleanStatus</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Contact Details Captured&quot;, &quot;Missing: &quot;&amp;IF( LEN( Phone ) = 0, &quot;Phone, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN( Email) = 0, &quot;Email, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN( MailingStreet ) = 0, &quot;Complete Address, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(Title) = 0, &quot;Job Title, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Salutation,&quot;&quot;), &quot;Salutation&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( LEN( Phone) = 0, 0,20) + IF( LEN( Email) = 0, 0,20) + IF( LEN(MailingStreet) = 0, 0,20) + IF( LEN(Title) = 0, 0,20) + IF( ISPICKVAL(Salutation,&quot;&quot;), 0,20)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Department</fullName>
@@ -202,6 +222,26 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Loan_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Loan Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Location</type>
+    </fields>
+    <fields>
         <fullName>MailingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -231,6 +271,70 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Picklist_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Picklist 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>0</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>ReportsToId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
@@ -238,6 +342,247 @@
     <fields>
         <fullName>Title</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>picklist_2__c</fullName>
+        <externalId>false</externalId>
+        <label>picklist 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Picklist_1__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>a</fullName>
+                    <default>false</default>
+                    <label>a</label>
+                </value>
+                <value>
+                    <fullName>b</fullName>
+                    <default>false</default>
+                    <label>b</label>
+                </value>
+                <value>
+                    <fullName>c</fullName>
+                    <default>false</default>
+                    <label>c</label>
+                </value>
+                <value>
+                    <fullName>d</fullName>
+                    <default>false</default>
+                    <label>d</label>
+                </value>
+                <value>
+                    <fullName>e</fullName>
+                    <default>false</default>
+                    <label>e</label>
+                </value>
+                <value>
+                    <fullName>f</fullName>
+                    <default>false</default>
+                    <label>f</label>
+                </value>
+                <value>
+                    <fullName>g</fullName>
+                    <default>false</default>
+                    <label>g</label>
+                </value>
+                <value>
+                    <fullName>h</fullName>
+                    <default>false</default>
+                    <label>h</label>
+                </value>
+                <value>
+                    <fullName>i</fullName>
+                    <default>false</default>
+                    <label>i</label>
+                </value>
+                <value>
+                    <fullName>j</fullName>
+                    <default>false</default>
+                    <label>j</label>
+                </value>
+                <value>
+                    <fullName>k</fullName>
+                    <default>false</default>
+                    <label>k</label>
+                </value>
+                <value>
+                    <fullName>l</fullName>
+                    <default>false</default>
+                    <label>l</label>
+                </value>
+                <value>
+                    <fullName>m</fullName>
+                    <default>false</default>
+                    <label>m</label>
+                </value>
+                <value>
+                    <fullName>n</fullName>
+                    <default>false</default>
+                    <label>n</label>
+                </value>
+                <value>
+                    <fullName>o</fullName>
+                    <default>false</default>
+                    <label>o</label>
+                </value>
+                <value>
+                    <fullName>p</fullName>
+                    <default>false</default>
+                    <label>p</label>
+                </value>
+                <value>
+                    <fullName>q</fullName>
+                    <default>false</default>
+                    <label>q</label>
+                </value>
+                <value>
+                    <fullName>r</fullName>
+                    <default>false</default>
+                    <label>r</label>
+                </value>
+                <value>
+                    <fullName>s</fullName>
+                    <default>false</default>
+                    <label>s</label>
+                </value>
+                <value>
+                    <fullName>t</fullName>
+                    <default>false</default>
+                    <label>t</label>
+                </value>
+                <value>
+                    <fullName>u</fullName>
+                    <default>false</default>
+                    <label>u</label>
+                </value>
+                <value>
+                    <fullName>v</fullName>
+                    <default>false</default>
+                    <label>v</label>
+                </value>
+                <value>
+                    <fullName>w</fullName>
+                    <default>false</default>
+                    <label>w</label>
+                </value>
+                <value>
+                    <fullName>x</fullName>
+                    <default>false</default>
+                    <label>x</label>
+                </value>
+                <value>
+                    <fullName>y</fullName>
+                    <default>false</default>
+                    <label>y</label>
+                </value>
+                <value>
+                    <fullName>z</fullName>
+                    <default>false</default>
+                    <label>z</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>1</controllingFieldValue>
+                <valueName>a</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>d</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>e</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>f</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3</controllingFieldValue>
+                <valueName>g</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3</controllingFieldValue>
+                <valueName>h</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>4</controllingFieldValue>
+                <valueName>i</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>5</controllingFieldValue>
+                <valueName>j</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6</controllingFieldValue>
+                <valueName>k</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7</controllingFieldValue>
+                <valueName>l</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7</controllingFieldValue>
+                <valueName>x</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7</controllingFieldValue>
+                <valueName>y</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>7</controllingFieldValue>
+                <valueName>z</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8</controllingFieldValue>
+                <valueName>m</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8</controllingFieldValue>
+                <valueName>u</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8</controllingFieldValue>
+                <valueName>v</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>8</controllingFieldValue>
+                <valueName>w</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>9</controllingFieldValue>
+                <valueName>n</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>o</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>p</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>q</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>r</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>s</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>t</valueName>
+            </valueSettings>
+        </valueSet>
     </fields>
     <listViews>
         <fullName>AllContacts</fullName>
@@ -279,6 +624,223 @@
         </filters>
         <label>New This Week</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Recordtype_Contact1</fullName>
+        <active>true</active>
+        <label>Recordtype Contact</label>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Picklist_1__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>picklist_2__c</picklist>
+            <values>
+                <fullName>a</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>b</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>c</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>d</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>e</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>f</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>g</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>i</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>j</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>k</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>l</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>m</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>n</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>o</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>p</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>q</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>r</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>s</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>t</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>u</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>v</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>w</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>x</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>y</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>z</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -302,10 +864,16 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>validation_rule_contact</fullName>
+        <active>true</active>
+        <errorConditionFormula>CONTAINS(LastName  , &apos;Test&apos;)</errorConditionFormula>
+        <errorDisplayField>LastName</errorDisplayField>
+        <errorMessage>error</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>Google_Info</fullName>
         <availability>online</availability>
-        <description>Perform a google info for the contact name.</description>
         <displayType>button</displayType>
         <encodingKey>UTF-8</encodingKey>
         <hasMenubar>false</hasMenubar>

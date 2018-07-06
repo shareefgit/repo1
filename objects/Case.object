@@ -13,11 +13,11 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
+        <actionName>CloneAsChild</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>CloneAsChild</actionName>
+        <actionName>Clone</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -56,6 +56,46 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <businessProcesses>
+        <fullName>Test 1</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Test Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <fieldSets>
@@ -129,6 +169,74 @@
     <fields>
         <fullName>ContactPhone</fullName>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Customer_emoticon__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(   (TEXT( Customer_emoticon_value__c ) ==&quot;&quot;)  ,&quot;&quot; ,IMAGE( &quot;resource/pkb_mobile/imgs/&quot;+TEXT( Customer_emoticon_value__c ) +&quot;.png&quot; ,TEXT( Customer_emoticon_value__c )  ,20,20))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>How the customer was feeling when he enter the support case.</inlineHelpText>
+        <label>Customer emoticon</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_emoticon_value__c</fullName>
+        <description>Store the emoticon as a text value.</description>
+        <externalId>false</externalId>
+        <label>Customer emoticon value</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>happy</fullName>
+                    <default>false</default>
+                    <label>happy</label>
+                </value>
+                <value>
+                    <fullName>annoyed</fullName>
+                    <default>false</default>
+                    <label>annoyed</label>
+                </value>
+                <value>
+                    <fullName>frustrated</fullName>
+                    <default>false</default>
+                    <label>frustrated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Case Details Captured&quot;, &quot;Missing: &quot;&amp;IF( ISPICKVAL( Status,&quot;&quot;),&quot;Status, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(ISPICKVAL( Type ,&quot;&quot;), &quot;Type, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Origin ,&quot;&quot;), &quot;Origin, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Reason ,&quot;&quot;), &quot;Reason, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( Priority ,&quot;&quot;), &quot;Priority, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN( Subject )&lt;5, &quot;Meaningful Subject Line&quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( OR(LEN(ContactId)=0,LEN( AccountId)=0), &quot;Associated Account and Contact&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR(LEN(ContactId)=0,LEN( AccountId)=0), 0,10) + IF( ISPICKVAL( Status ,&quot;&quot;), 0,15) + IF( ISPICKVAL( Type ,&quot;&quot;), 0,15) + IF( ISPICKVAL( Origin ,&quot;&quot;), 0,15) + IF( ISPICKVAL(   Reason ,&quot;&quot;), 0,15) + IF(ISPICKVAL(Priority, &quot;&quot;),0,15) + IF(LEN( Subject )&lt;5,0,15)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Description</fullName>
@@ -306,6 +414,13 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -340,6 +455,20 @@
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>pkbgeolocalization__c</fullName>
+        <description>Store the geolocalization of the customer on case creation from mobile.</description>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>Where the customer was when the case has been created</inlineHelpText>
+        <label>Customer Geolocalization</label>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
     </fields>
     <listViews>
         <fullName>AllClosedCases</fullName>
@@ -383,6 +512,179 @@
         </filters>
         <label>My Open Cases</label>
     </listViews>
+    <listViews>
+        <fullName>Regional_Dispatch_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Regional Dispatch</label>
+        <queue>Regional_Dispatch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Test_RecordType_acse</fullName>
+        <active>true</active>
+        <businessProcess>Test Process</businessProcess>
+        <label>Test RecordType acse</label>
+        <picklistValues>
+            <picklist>Customer_emoticon_value__c</picklist>
+            <values>
+                <fullName>annoyed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>frustrated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>happy</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PotentialLiability__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>GC1020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC1060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC3060</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5040</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GC5060</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Breakdown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Complexity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Equipment Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feedback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Installation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>SLAViolation__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mechanical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Structural</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>

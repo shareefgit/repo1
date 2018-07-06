@@ -60,6 +60,15 @@
     <fields>
         <fullName>StartingContext</fullName>
     </fields>
+    <listViews>
+        <fullName>Regional_Dispatch_Macro</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Regional Dispatch</label>
+        <queue>Regional_Dispatch</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>StartingContext</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
