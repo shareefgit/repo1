@@ -1230,6 +1230,7 @@
         <name>Settings</name>
     </types>
     <types>
+        <members>User.khaja1</members>
         <members>User.yousuf1</members>
         <name>SharingOwnerRule</name>
     </types>

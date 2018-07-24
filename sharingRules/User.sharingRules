@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingOwnerRules>
+        <fullName>khaja1</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>khaja1</label>
+        <sharedTo>
+            <roleAndSubordinates>EasternSalesTeam</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>COO</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
         <fullName>yousuf1</fullName>
         <accessLevel>Read</accessLevel>
         <label>yousuf1</label>
