@@ -17,6 +17,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>New</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -101,6 +105,13 @@
     </fields>
     <fields>
         <fullName>ProductFamily</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -122,6 +133,29 @@
     </fields>
     <fields>
         <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Shipped</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Installed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Obsolete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -134,16 +168,8 @@
     </fields>
     <listViews>
         <fullName>AllAssets</fullName>
-        <columns>ASSET.NAME</columns>
-        <columns>ASSET.SERIAL_NUMBER</columns>
-        <columns>ASSET.INSTALL_DATE</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CONTACT.NAME</columns>
-        <columns>PRODUCT2.NAME</columns>
-        <columns>PRODUCT2.FAMILY_ENUM</columns>
         <filterScope>Everything</filterScope>
         <label>All Assets</label>
-        <language>en_US</language>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>

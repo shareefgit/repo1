@@ -20,10 +20,16 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Categories</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Status</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
         <type>Picklist</type>
     </fields>
     <listViews>
@@ -62,7 +68,6 @@
         <customTabListAdditionalFields>IDEA.CATEGORIES</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.STATUS</customTabListAdditionalFields>
         <customTabListAdditionalFields>IDEA.LAST_COMMENT_DATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IDEA.IDEA_THEME</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>IDEA.TITLE</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>COMMUNITY.NAME</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>IDEA.TITLE</lookupPhoneDialogsAdditionalFields>

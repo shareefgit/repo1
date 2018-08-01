@@ -735,6 +735,7 @@
         <members>Lead</members>
         <members>LeadCleanInfo</members>
         <members>Lead_Transition__c</members>
+        <members>Lepa__mdt</members>
         <members>LinkedArticle</members>
         <members>LiveAgentSession</members>
         <members>LiveChatTranscript</members>
