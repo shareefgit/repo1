@@ -1496,8 +1496,22 @@
         <field>Yousuf_Shareef__c.Testyousuf__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>test06082018__c.test06082018__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>test0608__c.test0608__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Testrecord</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Asset-Asset Layout</layout>
@@ -1558,6 +1572,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lepa__mdt-Lepa Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
@@ -1659,6 +1676,12 @@
         <layout>Vehicle__c-Vehicle Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>X06082018__c-06082018 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>X11783__c-11783 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>XOGrp_Account__c-XOGrp Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1675,6 +1698,12 @@
     <layoutAssignments>
         <layout>Yousuf_Shareef__c-Yousuf_Shareef Layout</layout>
         <recordType>Yousuf_Shareef__c.TestRecordTypes</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>test06082018__c-test06082018 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>test0608__c-test0608 Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>

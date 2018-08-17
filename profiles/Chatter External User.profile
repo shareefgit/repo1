@@ -178,6 +178,41 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CF1__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CF2__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CF3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CF4__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CF5__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CF6__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.CF7__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Account.CleanStatus</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1461,6 +1496,16 @@
         <field>Yousuf_Shareef__c.Testyousuf__c</field>
         <readable>false</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>test06082018__c.test06082018__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>test0608__c.test0608__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -1529,6 +1574,9 @@
         <layout>Lead-Lead Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Lepa__mdt-Lepa Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1580,10 +1628,16 @@
         <layout>Support__c-Support Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Suryatest__mdt-Suryatest Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Task-Task Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Test11221f__c-Test11221f Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Test2106__mdt-Test2106 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>TestNA23issue__mdt-TestNA23issue Layout</layout>
@@ -1622,6 +1676,12 @@
         <layout>Vehicle__c-Vehicle Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>X06082018__c-06082018 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>X11783__c-11783 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>XOGrp_Account__c-XOGrp Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -1638,6 +1698,12 @@
     <layoutAssignments>
         <layout>Yousuf_Shareef__c-Yousuf_Shareef Layout</layout>
         <recordType>Yousuf_Shareef__c.TestRecordTypes</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>test06082018__c-test06082018 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>test0608__c-test0608 Layout</layout>
     </layoutAssignments>
     <pageAccesses>
         <apexPage>SE7488</apexPage>
