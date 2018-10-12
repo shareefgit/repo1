@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>40.0</version>
+    <version>41.0</version>
     <types>
         <members>A0</members>
         <members>A025</members>
@@ -1024,6 +1024,7 @@
     </types>
     <types>
         <members>Test22062018</members>
+        <members>X12ald</members>
         <members>test2206</members>
         <name>CustomLabel</name>
     </types>
@@ -1704,6 +1705,7 @@
     </types>
     <types>
         <members>de</members>
+        <members>en_US</members>
         <members>es</members>
         <members>sv</members>
         <name>Translations</name>
