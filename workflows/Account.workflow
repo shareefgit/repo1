@@ -2,6 +2,7 @@
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
         <fullName>testemailalert</fullName>
+        <ccEmails>shareeef.k@autormatob.com</ccEmails>
         <description>testemailalert</description>
         <protected>false</protected>
         <recipients>
@@ -21,6 +22,7 @@
             <field>Account.BillingCountry</field>
             <operation>notEqual</operation>
         </criteriaItems>
+        <description>qwqwq</description>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
