@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>41.0</version>
+    <version>40.0</version>
     <types>
         <members>A0</members>
         <members>A025</members>
@@ -1719,6 +1719,7 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>Account.testemailalert</members>
         <members>Case.Highpriority_case_created</members>
         <members>Case.Mediumpriority</members>
         <members>Opportunity.yousufemail</members>
@@ -1740,6 +1741,7 @@
         <name>WorkflowOutboundMessage</name>
     </types>
     <types>
+        <members>Account.testaccount</members>
         <members>Account.testttt</members>
         <members>Case.case created 1</members>
         <members>Case.prioritystatus</members>
